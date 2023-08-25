@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5px;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+}
+.todo-form {
+    width: 100%;
+    max-width: 480px;
+    background:whitesmoke;
+    margin: 100px auto;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+.head-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo-form h1 {
+        color: rgb(23, 54, 138);
+        margin-bottom: 10px;
+}
+.todo-form p {
+    color: black;
+    margin-bottom: 10px;
+}
+#item-container input{
+    margin: 0 15px;
+    /* border-right: solid 1px aquamarine; */
+}
+.row {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    margin: 30px 0;
+    padding-left: 30px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 1rem;
+}
+button {
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: aquamarine;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+ul li {
+    list-style: none;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    padding: 10px 45px;
+    user-select: none;
+    /* cursor: pointer; */
+    position: relative;
+}
+.itemDiv {
+    border-bottom: solid 1px aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.deleteButton {
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    background-color: transparent;
+    color: rgb(23, 54, 138);
+}
+@media screen and (max-width : 400px) {
+    .main {
+        opacity: 0.9;
+    }
+    .todo-form {
+        display:contents;
+    }
+    .todo-form h1 {
+        color: white;
+    }
+    .head-row {
+        display: inline;
+        
+    }
+    .head-row h1 {
+        color: rgb(23, 54, 138);
+    }
+    .head-row p {
+        color: rgb(23, 54, 138);
+    }
+    .row {
+        /* display:contents; */
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    input {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    }
+    button {
+        color: white;
+        background-color: transparent;
+        font-size: 30px;
+    }
+}

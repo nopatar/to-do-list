@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" 
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="todo-form">
+            <div class="head-row">
+                <h1>
+                    <i style="margin-right: 10px;" class="fa-regular fa-pen-to-square"></i>
+                    To-Do List 
+                </h1>
+                <p id="date"></p>
+            </div>
+            <div id="item-container"></div>
+            <div class="row">
+                <input type="text" id="input-element" 
+                       placeholder="new item" onkeydown="handleKeyPress(event)"> 
+                <button onclick="addItem()" type="button">+</button>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
